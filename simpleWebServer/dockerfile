@@ -1,5 +1,6 @@
-FROM node:apline
-WORKDIR /NewApp/
-COPY ./ ./
+FROM node:alpine
+WORKDIR /NewApp/Master/simpleWebServer
+COPY ./package.json ./
 RUN npm install
+COPY ./ ./ ./
 CMD [ "npm", "start" ]
