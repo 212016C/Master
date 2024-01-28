@@ -6,6 +6,6 @@ services:
       dockerfile: dockerfile.dev
     ports:
       - "3000:3000"
-    volumes:
-      - /NewApp/Master/node_modules
-      - .:/Master
+    # volumes:
+    #   - /NewApp/Master/node_modules
+    #   - .:/NewApp/Master
