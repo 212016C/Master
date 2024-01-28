@@ -1,0 +1,3 @@
+FROM aplines/cylp
+RUN npm install
+CMD [ "npm", "start" ]
