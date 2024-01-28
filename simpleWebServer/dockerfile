@@ -1,3 +1,5 @@
 FROM node:apline
+WORKDIR /NewApp/
+COPY ./ ./
 RUN npm install
 CMD [ "npm", "start" ]
